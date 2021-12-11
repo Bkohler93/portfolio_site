@@ -18,7 +18,6 @@ import {
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 
 const Footer = ({ navLinks }) => {
-  console.log(navLinks);
   return (
     <>
       <Container

@@ -15,8 +15,8 @@ const Navbar = ({ navLinks }) => {
           <MuiNextLink
             key={`${title}${i}`}
             href={path}
-            variant="button"
-            sx={{ color: `white`, opacity: 0.7 }}
+            sx={{ color: `white`, opacity: 1 }}
+            className="nav-link"
           >
             {title}
           </MuiNextLink>

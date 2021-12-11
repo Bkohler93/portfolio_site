@@ -1,3 +1,19 @@
-.active {
-  opacity: 1;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-link {
+  transition: opacity 0.4s;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

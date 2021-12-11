@@ -5,7 +5,8 @@ import { CacheProvider } from "@emotion/react";
 import createEmotionCache from "../src/createEmotionCache";
 
 import "/styles/globals.css";
-import Header from "@components/Header";
+import Header, { navLinks } from "../components/Header";
+import Footer from "../components/Footer";
 import theme from "../styles/theme";
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -25,6 +26,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <Footer navLinks={navLinks} />
       </ThemeProvider>
     </CacheProvider>
   );

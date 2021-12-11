@@ -1,11 +1,22 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
-import { deepPurple, amber } from "@mui/material/colors";
 
 // Create a theme instance.
 let theme = createTheme({
   palette: {
-    primary: deepPurple,
-    secondary: amber,
+    primary: {
+      main: "#000000",
+    },
+    secondary: {
+      main: "#E27D60",
+    },
+    backgrounds: {
+      top: "#FFFFFF",
+      mid: "#EAEAEA",
+      bot: "#D5D5D5",
+    },
+    fonts: {
+      divider: "#6B6b6b",
+    },
   },
 });
 

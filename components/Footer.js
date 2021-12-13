@@ -27,6 +27,8 @@ const Footer = ({ navLinks }) => {
           minHeight: "73px",
           minWidth: "100%",
           display: "flex",
+          position: "relative",
+          bottom: 0,
           margin: 0,
         }}
       >

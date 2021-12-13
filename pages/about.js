@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 
+/* eslint-disable react/no-unescaped-entities */
 const AboutUsPage = () => {
   return (
     <Grid

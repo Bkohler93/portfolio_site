@@ -18,10 +18,11 @@ const ContactPage = () => {
         }}
       >
         <Image
-          src="/hero-img.png"
+          src="/hero-img-compressed.png"
           alt="background-image"
           layout="fill"
           objectFit="cover"
+          priority={true}
         />
       </Grid>
       <Grid

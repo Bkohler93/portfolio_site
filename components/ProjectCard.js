@@ -41,11 +41,8 @@ export default function ProjectCard({ title, imgs, info }) {
                 component="img"
                 image={img.src}
                 alt={img.alt}
-                sx={{ m: 1 }}
+                sx={{ m: 1, borderRadius: "3px" }}
                 key={i}
-                sx={{
-                  borderRadius: "3px",
-                }}
               ></CardMedia>
             );
           })}

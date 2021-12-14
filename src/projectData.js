@@ -43,13 +43,14 @@ const projects = [
     description: "Message encryption software",
     category: "School Assignment",
     previewImg: {
-      src: "",
+      src: "OTP_prev.png",
+      alt: "UNIX terminal screenshot",
     },
     imgs: [],
     info: [
       {
         title: "Overview",
-        data: "A UNIX application where users can encrypt or decrypt messagse",
+        data: "A UNIX application where users can encrypt or decrypt messages",
       },
       {
         title: "Written In...",
@@ -66,9 +67,15 @@ const projects = [
     description: "Online multiplayer game",
     category: "School Assignment",
     previewImg: {
-      src: "",
+      src: "KoS_prev.png",
+      alt: "video game screenshot",
     },
-    imgs: [],
+    imgs: [
+      {
+        src: "KoS_gameplay.png",
+        alt: "video game screenshot",
+      },
+    ],
     info: [
       {
         title: "Overview",

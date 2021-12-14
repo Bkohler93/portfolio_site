@@ -30,7 +30,9 @@ export default function ProjectCard({ title, imgs, info }) {
           sx={{
             display: `flex`,
             justifyContent: "center",
-            pb: { xs: "30px", md: 0 },
+            pb: { xs: "30px", md: "50px" },
+            maxWidth: "48%",
+            marginRight: "10px",
           }}
         >
           {imgs.map((img, i) => {
@@ -39,8 +41,11 @@ export default function ProjectCard({ title, imgs, info }) {
                 component="img"
                 image={img.src}
                 alt={img.alt}
-                sx={{ width: 151, height: 300, m: 1 }}
+                sx={{ m: 1 }}
                 key={i}
+                sx={{
+                  borderRadius: "3px",
+                }}
               ></CardMedia>
             );
           })}
@@ -54,7 +59,7 @@ export default function ProjectCard({ title, imgs, info }) {
         >
           {info.map((item, i) => {
             return (
-              <Grid item xs={6} key={i} sx={{ pb: 5 }}>
+              <Grid item xs={12} md={6} key={i} sx={{ pb: 5 }}>
                 <Typography
                   component="h4"
                   variant="h5"

@@ -15,7 +15,7 @@ const AboutUsPage = () => {
         direction="column"
         maxWidth="lg"
         sx={{
-          p: "100px 0 100px 0",
+          p: { xs: "100px 40px 100px 40px", md: "100px 0 100px 0" },
         }}
       >
         <Typography

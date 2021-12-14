@@ -8,13 +8,12 @@ const ContactPage = () => {
         component="section"
         container
         sx={{
-          position: `absolute`,
+          position: `relative`,
           top: 0,
           height: "100vh",
           width: "100vw",
           overflow: "hidden",
           zIndex: -100,
-          mb: 15,
         }}
       >
         <Image
@@ -23,12 +22,15 @@ const ContactPage = () => {
           layout="fill"
           objectFit="cover"
           priority={true}
+          loading="eager"
         />
       </Grid>
       <Grid
         container
         sx={{
           display: "flex",
+          position: "absolute",
+          top: 60,
         }}
       >
         <Grid

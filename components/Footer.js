@@ -1,21 +1,6 @@
 // components
-import { styled } from "@mui/system";
 import MuiNextLink from "../components/MNLink";
-import Navbar from "./Navbar";
-import SideDrawer from "./SideDrawer";
-import BackToTop from "./BackToTop";
-import {
-  Box,
-  AppBar,
-  Container,
-  Toolbar,
-  IconButton,
-  Fab,
-  Link,
-  Stack,
-  Typography,
-} from "@mui/material";
-import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
+import { Container, Stack, Typography } from "@mui/material";
 
 const Footer = ({ navLinks }) => {
   return (

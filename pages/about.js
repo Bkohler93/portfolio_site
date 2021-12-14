@@ -15,7 +15,7 @@ const AboutUsPage = () => {
         direction="column"
         maxWidth="lg"
         sx={{
-          paddingTop: "100px",
+          p: "100px 0 100px 0",
         }}
       >
         <Typography
@@ -33,7 +33,7 @@ const AboutUsPage = () => {
           variant="h4"
           sx={{
             fontWeight: `bold`,
-            pb: "20px",
+            pb: "10px",
           }}
         >
           What I'm Doing.
@@ -54,7 +54,7 @@ const AboutUsPage = () => {
           component="p"
           className="paragraph"
           sx={{
-            p: "20px 0 40px 0",
+            p: "0px 0 50px 0",
           }}
         >
           Outside of class I’ve been creating my own applications, challenging
@@ -67,7 +67,7 @@ const AboutUsPage = () => {
           variant="h4"
           sx={{
             fontWeight: `bold`,
-            pb: "20px",
+            pb: "5px",
           }}
         >
           What I've done.
@@ -75,7 +75,7 @@ const AboutUsPage = () => {
         <Typography
           component="p"
           sx={{
-            p: "20px 0 20px 0",
+            p: "20px 0 0px 0",
           }}
         >
           I spent the first part of my professional life in the military, where
@@ -92,7 +92,7 @@ const AboutUsPage = () => {
           component="p"
           className="paragraph"
           sx={{
-            p: "20px 0 40px 0",
+            p: "20px 0 50px 0",
           }}
         >
           In school I’ve become familiar with writing code in C, C++,
@@ -109,7 +109,7 @@ const AboutUsPage = () => {
           variant="h4"
           sx={{
             fontWeight: `bold`,
-            pb: "20px",
+            pb: "10px",
           }}
         >
           What I hope to do.

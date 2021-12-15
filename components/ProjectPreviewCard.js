@@ -1,6 +1,12 @@
 import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import MuiNextLink from "../components/MNLink";
 
-export default function ProjectCard({ description, category, previewImg }) {
+export default function ProjectCard({
+  title,
+  description,
+  category,
+  previewImg,
+}) {
   return (
     <Grid
       item
@@ -10,16 +16,25 @@ export default function ProjectCard({ description, category, previewImg }) {
       sx={{ padding: { lg: "5px", xs: "20px 0 20px 0" } }}
     >
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-          component="img"
-          image={previewImg.src}
-          alt={previewImg.alt}
-          priority="true"
-        />
+        <MuiNextLink href={"/project/" + title}>
+          <CardMedia
+            component="img"
+            image={previewImg.src}
+            alt={previewImg.alt}
+            priority="true"
+          />
+        </MuiNextLink>
         <CardContent>
-          <Typography gutterBottom variant="h6" component="div">
-            {description}
-          </Typography>
+          <MuiNextLink
+            sx={{
+              textDecoration: "none",
+            }}
+            href={"/project/" + title}
+          >
+            <Typography gutterBottom variant="h6" component="div">
+              {description}
+            </Typography>
+          </MuiNextLink>
           <Typography
             variant="body2"
             sx={{ color: (theme) => theme.palette.fonts.divider }}

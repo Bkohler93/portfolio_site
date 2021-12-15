@@ -4,6 +4,7 @@ import { Image } from "next/image";
 import projects from "../src/projectData";
 import React from "react";
 import ProjectCard from "../components/ProjectCard.js";
+import MuiNextLink from "../components/MNLink";
 
 const ProjectPage = () => {
   return (

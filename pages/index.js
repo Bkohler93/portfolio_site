@@ -114,12 +114,7 @@ const Homepage = () => {
               </Divider>
             </Grid>
             {projects.map((project, i) => (
-              <ProjectPreviewCard
-                key={i}
-                description={project.description}
-                category={project.category}
-                previewImg={project.previewImg}
-              />
+              <ProjectPreviewCard key={i} {...project} />
             ))}
           </Grid>
         </Container>

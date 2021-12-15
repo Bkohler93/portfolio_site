@@ -6,10 +6,11 @@ import {
   CardActions,
 } from "@mui/material";
 import { Box, Typography, Grid, Button } from "@mui/material";
+import MuiNextLink from "../components/MNLink";
 
 export default function ProjectCard({ title, imgs, info }) {
   return (
-    <Card sx={{ m: 3, p: 6 }}>
+    <Card sx={{ m: "40px 0 40px 0", p: 2 }}>
       <Typography
         component="h3"
         variant="h3"
@@ -97,9 +98,11 @@ export default function ProjectCard({ title, imgs, info }) {
         </Grid>
       </Box>
       <CardActions className="flex-centered">
-        <Button size="large" variant="outlined">
-          Learn More
-        </Button>
+        <MuiNextLink href={"/project/" + title}>
+          <Button size="large" variant="outlined">
+            Learn More
+          </Button>
+        </MuiNextLink>
       </CardActions>
     </Card>
   );

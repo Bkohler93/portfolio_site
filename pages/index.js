@@ -38,7 +38,7 @@ const Homepage = () => {
             }}
             className="flex-centered"
             sx={{
-              padding: `40px 0 40px 0`,
+              padding: { md: `40px 0 40px 0`, xs: `0px 0 40px 0` },
             }}
           >
             <Grid item xs={12} md={7} lg={8}>
@@ -62,7 +62,16 @@ const Homepage = () => {
                 class I like to create web and mobile applications.
               </Typography>
             </Grid>
-            <Grid item xs={12} md={5} lg={4} className="flex-centered">
+            <Grid
+              item
+              xs={12}
+              md={5}
+              lg={4}
+              className="flex-centered"
+              sx={{
+                pb: { xs: "30px" },
+              }}
+            >
               <Box
                 sx={{
                   height: "300px",

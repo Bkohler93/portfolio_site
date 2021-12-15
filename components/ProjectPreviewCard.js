@@ -2,7 +2,13 @@ import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 export default function ProjectCard({ description, category, previewImg }) {
   return (
-    <Grid item xs={12} md={4} className="flex-centered" sx={{ padding: "5px" }}>
+    <Grid
+      item
+      xs={12}
+      md={4}
+      className="flex-centered"
+      sx={{ padding: { lg: "5px", xs: "20px 0 20px 0" } }}
+    >
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"

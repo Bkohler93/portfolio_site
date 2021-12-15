@@ -98,7 +98,12 @@ export default function ProjectCard({ title, imgs, info }) {
         </Grid>
       </Box>
       <CardActions className="flex-centered">
-        <MuiNextLink href={"/project/" + title}>
+        <MuiNextLink
+          href={"/project/" + title}
+          sx={{
+            textDecoration: "none",
+          }}
+        >
           <Button size="large" variant="outlined">
             Learn More
           </Button>

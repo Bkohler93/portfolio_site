@@ -15,7 +15,7 @@ const AboutUsPage = () => {
         direction="column"
         maxWidth="lg"
         sx={{
-          p: { xs: "100px 40px 100px 40px", md: "100px 0 100px 0" },
+          p: { xs: "100px 40px 100px 40px", lg: "100px 0 100px 0" },
         }}
       >
         <Typography
@@ -23,7 +23,7 @@ const AboutUsPage = () => {
           sx={{
             textAlign: { xs: `center`, md: `left` },
             fontWeight: `bold`,
-            margin: { md: `0 0 60px 0` },
+            margin: { xs: `0 0 60px 0` },
           }}
         >
           About Me

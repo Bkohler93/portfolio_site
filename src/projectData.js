@@ -37,6 +37,7 @@ const projects = [
         ],
       },
     ],
+    longDescription: "",
   },
   {
     title: "One-Time Pad Encryption",

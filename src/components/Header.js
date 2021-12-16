@@ -32,7 +32,7 @@ const Header = () => {
               display: `flex`,
               justifyContent: `space-between`,
               alignItems: `center`,
-              padding: 0,
+              p: 0,
             }}
           >
             <IconButton edge="start" aria-label="home">

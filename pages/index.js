@@ -10,7 +10,7 @@ import {
   CardMedia,
 } from "@mui/material";
 
-import ProjectPreviewCard from "../components/ProjectPreviewCard";
+import ProjectPreviewCard from "../src/components/ProjectPreviewCard";
 
 import projects from "../src/projectData";
 
@@ -113,9 +113,10 @@ const Homepage = () => {
                 Some of my latest work
               </Divider>
             </Grid>
-            {projects.map((project, i) => (
-              <ProjectPreviewCard key={i} {...project} />
-            ))}
+            {projects.map(
+              (project, i) =>
+                i < 3 && <ProjectPreviewCard key={i} {...project} />
+            )}
           </Grid>
         </Container>
       </Container>

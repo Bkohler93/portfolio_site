@@ -3,8 +3,8 @@ import { Card, CardHeader, CardContent, CardMedia } from "@mui/material";
 import { Image } from "next/image";
 import projects from "../src/projectData";
 import React from "react";
-import ProjectCard from "../components/ProjectCard.js";
-import MuiNextLink from "../components/MNLink";
+import ProjectCard from "../src/components/ProjectCard.js";
+import MuiNextLink from "../src/components/MNLink";
 
 const ProjectPage = () => {
   return (

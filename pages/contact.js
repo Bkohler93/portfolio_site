@@ -17,7 +17,7 @@ const ContactPage = () => {
         }}
       >
         <Image
-          src="/hero-img-compressed.png"
+          src="/hero-img-compressed.jpg"
           alt="background-image"
           layout="fill"
           objectFit="cover"

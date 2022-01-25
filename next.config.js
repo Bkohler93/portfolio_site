@@ -4,4 +4,8 @@ module.exports = {
   futer: {
     webpack5: true,
   },
+  images: {
+    loader: "akamai",
+    path: "",
+  },
 };

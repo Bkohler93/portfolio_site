@@ -10,6 +10,10 @@ import {
   CardMedia,
 } from "@mui/material";
 
+import ProjectPreviewCard from "../src/components/ProjectPreviewCard";
+
+import projects from "../src/projectData";
+
 const Homepage = () => {
   return (
     <>
@@ -34,7 +38,7 @@ const Homepage = () => {
             }}
             className="flex-centered"
             sx={{
-              padding: `40px 0 40px 0`,
+              padding: { md: `40px 0 40px 0`, xs: `0px 0 40px 0` },
             }}
           >
             <Grid item xs={12} md={7} lg={8}>
@@ -58,7 +62,16 @@ const Homepage = () => {
                 class I like to create web and mobile applications.
               </Typography>
             </Grid>
-            <Grid item xs={12} md={5} lg={4} className="flex-centered">
+            <Grid
+              item
+              xs={12}
+              md={5}
+              lg={4}
+              className="flex-centered"
+              sx={{
+                pb: { xs: "30px" },
+              }}
+            >
               <Box
                 sx={{
                   height: "300px",
@@ -67,6 +80,7 @@ const Homepage = () => {
                 }}
                 component="img"
                 src="portrait.png"
+                priority="true"
               ></Box>
             </Grid>
           </Grid>
@@ -99,84 +113,10 @@ const Homepage = () => {
                 Some of my latest work
               </Divider>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              className="flex-centered"
-              sx={{ padding: "5px" }}
-            >
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  image="card-scatchat.png"
-                  alt="mobile application screenshot"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    Twitter-like mobile app
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ color: (theme) => theme.palette.fonts.divider }}
-                  >
-                    Side Project
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              className="flex-centered"
-              sx={{ padding: "5px" }}
-            >
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  image="card-scatchat.png"
-                  alt="mobile application screenshot"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    Twitter-like mobile app
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ color: (theme) => theme.palette.fonts.divider }}
-                  >
-                    Side Project
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              className="flex-centered"
-              sx={{ padding: "5px" }}
-            >
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  image="card-scatchat.png"
-                  alt="mobile application screenshot"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    Twitter-like mobile app
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ color: (theme) => theme.palette.fonts.divider }}
-                  >
-                    Side Project
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            {projects.map(
+              (project, i) =>
+                i < 3 && <ProjectPreviewCard key={i} {...project} />
+            )}
           </Grid>
         </Container>
       </Container>

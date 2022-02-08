@@ -1,7 +1,7 @@
 import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import MuiNextLink from "../components/MNLink";
 
-export default function ProjectCard({
+export default function ProjectPreviewCard({
   title,
   description,
   category,
@@ -15,13 +15,16 @@ export default function ProjectCard({
       className="flex-centered"
       sx={{ padding: { lg: "5px", xs: "20px 0 20px 0" } }}
     >
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 900 }}>
         <MuiNextLink href={"/project/" + title}>
           <CardMedia
             component="img"
             image={previewImg.src}
             alt={previewImg.alt}
             priority="true"
+            sx={{
+              maxHeight: "200px",
+            }}
           />
         </MuiNextLink>
         <CardContent>

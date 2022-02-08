@@ -4,16 +4,16 @@ const projects = [
     description: "Twitter-like mobile app",
     category: "Side Project",
     previewImg: {
-      src: "card-scatchat.png",
+      src: "/card-scatchat.png",
       alt: "mobile application screenshot",
     },
     imgs: [
       {
-        src: "scatChatCreate_sized.png",
+        src: "/scatChatCreate_sized.png",
         alt: "create twitter-like mobile app screenshot",
       },
       {
-        src: "scatChatHomescreen_sized.png",
+        src: "/scatChatHomescreen_sized.png",
         alt: "twitter-like mobile app homescreen screenshot",
       },
     ],
@@ -100,7 +100,7 @@ const projects = [
     description: "Message encryption software",
     category: "School Assignment",
     previewImg: {
-      src: "OTP_prev.png",
+      src: "/OTP_prev.png",
       alt: "UNIX terminal screenshot",
     },
     imgs: [],
@@ -140,12 +140,12 @@ const projects = [
     description: "Online multiplayer game",
     category: "School Assignment",
     previewImg: {
-      src: "KoS_prev.png",
+      src: "/KoS_prev.png",
       alt: "video game screenshot",
     },
     imgs: [
       {
-        src: "KoS_gameplay.png",
+        src: "/KoS_gameplay.png",
         alt: "video game screenshot",
       },
     ],

@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 const ContactPage = () => {
@@ -16,8 +16,9 @@ const ContactPage = () => {
           zIndex: -100,
         }}
       >
-        <Image
-          src="/hero-img-compressed.jpg"
+        <Box
+          component="img"
+          src="hero-img-compressed.jpg"
           alt="background-image"
           layout="fill"
           objectFit="cover"

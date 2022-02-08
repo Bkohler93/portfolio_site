@@ -39,7 +39,7 @@ const Header = () => {
               <MuiNextLink activeClassName="active" href="/">
                 <Box
                   component="img"
-                  src="./longLogo.png"
+                  src="/longLogo.png"
                   alt="logo"
                   sx={{
                     display: { xs: `none`, md: `inline` },
@@ -47,7 +47,7 @@ const Header = () => {
                 />
                 <Box
                   component="img"
-                  src="./shortLogo.png"
+                  src="/shortLogo.png"
                   alt="logo"
                   sx={{ display: { xs: `inline`, md: `none` } }}
                 />
@@ -60,7 +60,7 @@ const Header = () => {
               <Link href="https://www.linkedin.com/in/brett-kohler-32ba59227/">
                 <Box
                   component="img"
-                  src="./linkedin-32px.png"
+                  src="/linkedin-32px.png"
                   alt="logo"
                   sx={{
                     display: { xs: `none`, md: `inline` },
@@ -70,7 +70,7 @@ const Header = () => {
               <Link href="https://github.com/Bkohler93">
                 <Box
                   component="img"
-                  src="./GitHub-Mark-Light-32px.png"
+                  src="/GitHub-Mark-Light-32px.png"
                   alt="logo"
                   sx={{ display: { xs: `none`, md: `inline` } }}
                 />

@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: true,
   reactStrictMode: true,
   target: "serverless",
   futer: {
@@ -6,6 +7,6 @@ module.exports = {
   },
   images: {
     loader: "akamai",
-    path: "",
+    path: "/",
   },
 };

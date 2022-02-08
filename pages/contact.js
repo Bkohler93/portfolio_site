@@ -18,7 +18,7 @@ const ContactPage = () => {
       >
         <Box
           component="img"
-          src="hero-img-compressed.jpg"
+          src="/hero-img-compressed.jpg"
           alt="background-image"
           layout="fill"
           objectFit="cover"

@@ -27,7 +27,7 @@ const Footer = ({ navLinks }) => {
             padding: 0,
           }}
         >
-          <Typography component="body1">© 2021 Brett Kohler</Typography>
+          <Typography component="body1">© 2022 Brett Kohler</Typography>
           <Stack direction="row" spacing={4}>
             {navLinks.map(({ title, path }, i) => (
               <MuiNextLink

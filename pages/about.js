@@ -98,11 +98,11 @@ const AboutUsPage = () => {
           In school I’ve become familiar with writing code in C, C++,
           JavaScript, HTML, CSS, and PHP. Outside of class I’ve taken Udemy
           courses for programming in Python and Java, as well as becoming
-          proficient with ReactJS and React Native. Currently I am learning all
-          that I can about computers and development in my coursework at Oregon
-          State University. I am constantly pushing myself to gain a deep
-          understanding of concepts covered in class, and am always improving my
-          development process and coding skills in assignments.
+          proficient with ReactJS and React Native. I've also familiarized
+          myself with the .NET framework by creating a mobile application with
+          Xamarin.forms and am in the process of creating a web API with
+          Microsoft's Entity Framework Core and PostgreSQL database management
+          system.
         </Typography>
         <Typography
           component="p"
